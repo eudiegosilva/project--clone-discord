@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ExpandMore } from 'styled-icons/material';
+
 export const ServerNameContainer = styled.div`
   align-items: center;
   background-color: ${(props) => props.theme.colors.secondary};
