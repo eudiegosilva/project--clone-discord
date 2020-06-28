@@ -29,8 +29,8 @@ export const LeftWrapper = styled.div`
 
 export const HashtagIcon = styled(Hashtag)`
   color: ${(props) => props.theme.colors.symbol};
-  width: 20px;
   height: 20px;
+  width: 20px;
 `;
 
 export const ChannelName = styled.span`

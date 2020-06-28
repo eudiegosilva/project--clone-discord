@@ -3,6 +3,7 @@ import React from 'react';
 import {
   ChannelListContainer,
   CategoryWrapper,
+  ArrowIcon,
   CategoryName,
   AddCategoryIcon,
 } from './styles';
@@ -13,15 +14,37 @@ const ChannelList: React.FC = () => {
   return (
     <ChannelListContainer>
       <CategoryWrapper>
-        <CategoryName>canais de texto</CategoryName>
+        <CategoryName>
+          <ArrowIcon />
+          information
+        </CategoryName>
         <AddCategoryIcon />
       </CategoryWrapper>
 
-      <ChannelButton channelName="chat-livre" />
-      <ChannelButton channelName="trabalho" />
-      <ChannelButton channelName="gta-v" />
-      <ChannelButton channelName="cs:go" />
-      <ChannelButton channelName="mad-max" />
+      <ChannelButton channelName="welcome" />
+
+      <CategoryWrapper>
+        <CategoryName>
+          <ArrowIcon />
+          information
+        </CategoryName>
+        <AddCategoryIcon />
+      </CategoryWrapper>
+
+      <ChannelButton channelName="ts-discussion" />
+      <ChannelButton channelName="random" />
+      <ChannelButton channelName="bot-commands" />
+
+      <CategoryWrapper>
+        <CategoryName>
+          <ArrowIcon />
+          help
+        </CategoryName>
+        <AddCategoryIcon />
+      </CategoryWrapper>
+
+      <ChannelButton channelName="react" />
+      <ChannelButton channelName="language-design" />
     </ChannelListContainer>
   );
 };
