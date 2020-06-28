@@ -16,7 +16,6 @@ export interface ChannelButtonProps {
 
 const ChannelButton: React.FC<ChannelButtonProps> = ({ channelName }) => {
   const [isActive, setIsActive] = useState(false);
-  console.log({ isActive });
 
   return (
     <ChannelButtonContainer

@@ -22,6 +22,7 @@ const ChannelData: React.FC = () => {
       <MessagesWrapper ref={messagesRef}>
         {Array.from(Array(20).keys()).map((number) => (
           <ChannelMessage
+            key={number}
             authorName="coderamos"
             date="2020/05/11"
             contentMessage="o/"
