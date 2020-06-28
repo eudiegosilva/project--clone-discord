@@ -7,6 +7,7 @@ import ChannelButton from './channelButton';
 import UserInfo from './userInfo';
 import UserList from './userList';
 import ChannelData from './channelData';
+import ChannelMessage from './channelMessage';
 
 export {
   Layout,
@@ -18,4 +19,5 @@ export {
   UserInfo,
   UserList,
   ChannelData,
+  ChannelMessage,
 };
