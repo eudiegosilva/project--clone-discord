@@ -20,12 +20,22 @@ export const CategoryWrapper = styled.div`
   :not(:first-child) {
     margin-top: 21px;
   }
+
+  &:hover {
+    span {
+      color: ${(props) => props.theme.colors.white};
+    }
+    svg:first-child {
+      color: ${(props) => props.theme.colors.white};
+    }
+  }
 `;
 
 export const ArrowIcon = styled(ArrowIosForwardOutline)`
   color: ${(props) => props.theme.colors.symbol};
   height: 12px;
   margin-right: 3px;
+  transition: color 0.2s;
   width: 12px;
 `;
 
@@ -36,11 +46,17 @@ export const CategoryName = styled.span`
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: color 0.2s;
 `;
 
 export const AddCategoryIcon = styled(Add)`
   color: ${(props) => props.theme.colors.symbol};
   cursor: pointer;
   height: 21px;
+  transition: color 0.2s;
   width: 21px;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.white};
+  }
 `;
