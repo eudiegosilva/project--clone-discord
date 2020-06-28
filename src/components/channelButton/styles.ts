@@ -42,6 +42,8 @@ export const ChannelName = styled.span`
 export const RightWrapper = styled.div`
   align-items: center;
   display: flex;
+  opacity: ${(props) => (props.className === 'active' ? 1 : 0)};
+  transition: opacity 0.2s;
 `;
 
 export const InviteIcon = styled(PersonAdd)`

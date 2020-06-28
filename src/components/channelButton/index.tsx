@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   ChannelButtonContainer,
@@ -12,21 +12,25 @@ import {
 
 export interface ChannelButtonProps {
   channelName: string;
-  selected?: boolean;
 }
 
-const ChannelButton: React.FC<ChannelButtonProps> = ({
-  channelName,
-  selected,
-}) => {
+const ChannelButton: React.FC<ChannelButtonProps> = ({ channelName }) => {
+  const [isActive, setIsActive] = useState(false);
+  console.log({ isActive });
+
   return (
-    <ChannelButtonContainer className={selected ? 'active' : ''}>
+    <ChannelButtonContainer
+      className={isActive ? 'active' : ''}
+      onMouseEnter={() => setIsActive(!isActive)}
+      onMouseLeave={() => setIsActive(!isActive)}
+      onClick={() => setIsActive(!isActive)}
+    >
       <LeftWrapper>
         <HashtagIcon />
         <ChannelName>{channelName}</ChannelName>
       </LeftWrapper>
 
-      <RightWrapper>
+      <RightWrapper className={isActive ? 'active' : ''}>
         <InviteIcon />
         <SettingsIcon />
       </RightWrapper>
