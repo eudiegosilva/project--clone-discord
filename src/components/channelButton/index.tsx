@@ -20,9 +20,9 @@ const ChannelButton: React.FC<ChannelButtonProps> = ({ channelName }) => {
   return (
     <ChannelButtonContainer
       className={isActive ? 'active' : ''}
+      onClick={() => setIsActive(!isActive)}
       onMouseEnter={() => setIsActive(!isActive)}
       onMouseLeave={() => setIsActive(!isActive)}
-      onClick={() => setIsActive(!isActive)}
     >
       <LeftWrapper>
         <HashtagIcon />

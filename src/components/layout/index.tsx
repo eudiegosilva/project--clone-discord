@@ -1,13 +1,14 @@
 import React from 'react';
 
 import { GridLayout } from './styles';
-import ServerList from '../serverList';
-import ServerName from '../serverName';
+
+import ChannelData from '../channelData';
 import ChannelInfo from '../channelInfo';
 import ChannelList from '../channelList';
+import ServerList from '../serverList';
+import ServerName from '../serverName';
 import UserInfo from '../userInfo';
 import UserList from '../userList';
-import ChannelData from '../channelData';
 
 const Layout: React.FC = () => {
   return (

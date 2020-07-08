@@ -1,16 +1,16 @@
 import React from 'react';
 
 import {
-  UserInfoContainer,
-  ProfileWrapper,
-  UserAvatar,
-  UserDataWrapper,
-  UserName,
-  UserId,
+  HeadsetIcon,
   IconsWrapper,
   MicIcon,
-  HeadsetIcon,
+  ProfileWrapper,
   SettingsIcon,
+  UserAvatar,
+  UserDataWrapper,
+  UserId,
+  UserInfoContainer,
+  UserName,
 } from './styles';
 
 const UserInfo: React.FC = () => {

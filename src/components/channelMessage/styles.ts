@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const ChannelMessageContainer = styled.div`
-  display: flex;
   align-items: center;
-  padding: 4px 16px;
-  margin-right: 4px;
   background-color: transparent;
+  display: flex;
+  margin-right: 4px;
+  padding: 4px 16px;
 
   &.mention {
     background-color: ${(props) => props.theme.colors.mentionmessage};
@@ -19,10 +19,10 @@ export const ChannelMessageContainer = styled.div`
 `;
 
 export const AuthorAvatar = styled.div`
-  height: 40px;
-  width: 40px;
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
 
   &.bot {
     border: 2px solid ${(props) => props.theme.colors.hover};
@@ -30,17 +30,16 @@ export const AuthorAvatar = styled.div`
 `;
 
 export const MessageWrapper = styled.div`
-  min-height: 40px;
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
   margin-left: 17px;
+  min-height: 40px;
 `;
 
 export const Header = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
 `;
 
 export const AuthorName = styled.strong`
@@ -60,15 +59,15 @@ export const BotFlag = styled.span`
 `;
 
 export const Date = styled.time`
-  margin-left: 6px;
   color: ${(props) => props.theme.colors.gray};
   font-size: 13px;
+  margin-left: 6px;
 `;
 
 export const Content = styled.div`
-  text-align: left;
-  font-size: 16px;
   color: ${(props) => props.theme.colors.white};
+  font-size: 16px;
+  text-align: left;
 `;
 
 export const Mention = styled.span`

@@ -1,12 +1,12 @@
 import React from 'react';
 
 import {
-  UserListContainer,
-  UserWrapper,
-  UserAvatar,
-  UserName,
   BotFlag,
   Role,
+  UserAvatar,
+  UserListContainer,
+  UserName,
+  UserWrapper,
 } from './styles';
 
 interface UserRowProps {

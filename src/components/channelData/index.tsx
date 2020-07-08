@@ -2,10 +2,10 @@ import React, { useRef, useEffect } from 'react';
 
 import {
   ChannelDataContainer,
-  MessagesWrapper,
-  InputWrapper,
-  InputText,
   InputIcon,
+  InputText,
+  InputWrapper,
+  MessagesWrapper,
 } from './styles';
 
 import ChannelMessage, { Mention } from '../channelMessage';
@@ -14,9 +14,9 @@ const ChannelData: React.FC = () => {
   const messagesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   useEffect(() => {
     const div = messagesRef.current;
-
     div && (div.scrollTop = div.scrollHeight);
   }, [messagesRef]);
+
   return (
     <ChannelDataContainer>
       <MessagesWrapper ref={messagesRef}>
@@ -24,32 +24,33 @@ const ChannelData: React.FC = () => {
           <ChannelMessage
             key={number}
             authorName="coderamos"
-            date="2020/05/11"
             contentMessage="o/"
+            date="2020/05/11"
           />
         ))}
         <ChannelMessage
           authorName="codebot"
-          date="2020/05/11"
           contentMessage="\o/"
+          date="2020/05/11"
           isBot
         />
         <ChannelMessage
           authorName="kangaroo"
-          date="2020/05/11"
           contentMessage="haha!"
+          date="2020/05/11"
         />
         <ChannelMessage
           authorName="kangaroo"
           date="2020/05/11"
+          hasMention
           contentMessage={
             <>
               <Mention>@coderamos</Mention>, that was funny mate!
             </>
           }
-          hasMention
         />
       </MessagesWrapper>
+
       <InputWrapper>
         <InputText placeholder="Message em #typescript-website" />
         <InputIcon />

@@ -1,11 +1,11 @@
 import React from 'react';
 
 import {
-  ChannelInfoContainer,
-  HashtagIcon,
-  ChannelTitle,
-  Separator,
   ChannelDescription,
+  ChannelInfoContainer,
+  ChannelTitle,
+  HashtagIcon,
+  Separator,
 } from './styles';
 
 const ChannelInfo: React.FC = () => {
@@ -14,6 +14,7 @@ const ChannelInfo: React.FC = () => {
       <HashtagIcon />
       <ChannelTitle>typescript-website</ChannelTitle>
       <Separator />
+
       <ChannelDescription>
         Discussion about features, changes or improvements
       </ChannelDescription>

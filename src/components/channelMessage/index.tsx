@@ -15,16 +15,16 @@ export { Mention } from './styles';
 
 export interface ChannelMessageProps {
   authorName: string;
-  date: string;
   contentMessage: string | React.ReactElement | React.ReactNode;
+  date: string;
   hasMention?: boolean;
   isBot?: boolean;
 }
 
 const ChannelMessage: React.FC<ChannelMessageProps> = ({
   authorName,
-  date,
   contentMessage,
+  date,
   hasMention,
   isBot,
 }) => {

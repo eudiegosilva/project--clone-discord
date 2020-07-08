@@ -1,11 +1,11 @@
 import React from 'react';
 
 import {
-  ChannelListContainer,
-  CategoryWrapper,
+  AddCategoryIcon,
   ArrowIcon,
   CategoryName,
-  AddCategoryIcon,
+  CategoryWrapper,
+  ChannelListContainer,
 } from './styles';
 
 import ChannelButton from '../channelButton';
